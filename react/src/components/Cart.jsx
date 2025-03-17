@@ -14,8 +14,8 @@ const Cart = ({ items, onRemoveItem }) => {
             <div key={item.id} className='cart-item' onClick={() => onRemoveItem(item.id)}>
               <div>
                 <h4>{item.title}</h4>
-                <p>Author: {item.author}</p>
-                <p>Price: ${item.price}</p>
+                <p>Автор: {item.author}</p>
+                <p>Цена: ${item.price}</p>
               </div>
               <button className='cart-delete-btn' onClick={() => onRemoveItem(item.id)}>
                 x
